@@ -60,4 +60,47 @@ nav li {
   height: 80rem;
   background-position: center;
   background-size: cover;
+  text-align: center;
+  padding-top: 15rem;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+.hero-section button {
+  margin-top: 4rem;
+  padding: 1rem 4rem;
+  background: rgb(53, 120, 190);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.form-section {
+  text-align: center;
+}
+
+form {
+}
+
+form input,
+label,
+textarea {
+  display: block;
+  font-size: 2.4rem;
+}
+
+form input,
+form textarea {
+  margin: 2rem auto;
+  width: 50%;
+}
+
+form button {
+  margin-bottom: 5rem;
+  padding: 1rem 4rem;
+  background: rgb(53, 120, 190);
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 50%;
 }
