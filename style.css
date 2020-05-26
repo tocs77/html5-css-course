@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.clear {
+  clear: both;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -18,7 +22,7 @@ h2 {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 2.5rem;
 }
@@ -29,4 +33,31 @@ h3 {
 
 button {
   font-size: 1.8rem;
+}
+
+nav {
+  background: rgb(61, 81, 102);
+  color: white;
+  padding: 3rem;
+}
+
+nav h1 {
+  float: left;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+  margin: 0 4rem;
+}
+
+.hero-section {
+  background-image: url('./back.JPG');
+  height: 80rem;
+  background-position: center;
+  background-size: cover;
 }
