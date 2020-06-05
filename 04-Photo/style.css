@@ -33,6 +33,9 @@ html {
   --special-color: #906272;
   --background-color: #414141;
   --gray-text: #525252;
+
+  scroll-behavior: smooth;
+
 }
 
 h1 {
@@ -198,8 +201,7 @@ nav {
   }
 }
 
-.burger,
-.menu-check {
+.burger {
   display: none;
 }
 
@@ -367,6 +369,7 @@ footer h4 {
   .burger {
     position: relative;
     display: block;
+    cursor: pointer;
   }
   .burger span {
     padding: 0.2rem 2rem;
@@ -392,32 +395,21 @@ footer h4 {
     text-decoration: underline;
   }
 
-  .menu-check {
-    position: absolute;
-    display: block;
-    top: 50%;
-    right: 5%;
-    transform: translate(5%, -50%);
-    width: 5rem;
-    height: 5rem;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 100;
-  }
-  .menu-check:checked + .nav-links {
+  .nav-open {
     transform: translate(-100%);
   }
-  .menu-check:checked ~ .burger span {
+
+  .toggle .line1{
+    transform: rotateZ(45deg) translateY(300%);
     background: white;
   }
-  .menu-check:checked ~ .burger span:nth-child(1) {
-    transform: rotateZ(45deg) translateY(300%);
-  }
-  .menu-check:checked ~ .burger span:nth-child(2) {
+  .toggle .line2{
     opacity: 0;
   }
-  .menu-check:checked ~ .burger span:nth-child(3) {
+
+  .toggle .line3 {
     transform: rotateZ(-45deg) translateY(-300%);
+    background: white;
   }
   /* About Section */
   .about-text div {
